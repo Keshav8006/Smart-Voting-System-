@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='lets-vote.css') }}">
+    <script src="{{ url_for('static', filename='lets-vote.js') }}"></script>
+</head>
+
+<body>
+    <!-- Voting Card -->
+    <div class="card">
+        <h1>Online Voting</h1>
+
+        <form action="{{ url_for('submit_vote') }}" method="post">
+            <!-- Dropdown -->
+            <div class="dropdown-container">
+                <label for="candidate">Select Candidate:</label>
+                <select id="candidate" name="candidate">  <!-- ADD name="candidate" HERE -->
+                    {% for candidate_name in candidate_names %}
+                        <option value="{{ candidate_name }}">{{ candidate_name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <!-- Buttons -->
+            <button type="submit" id="voteButton" class="button vote">Vote</button>
+        </form>
+        <button id="clearButton" class="button clear">Clear Votes</button>
+        <button id="pieChartButton" class="button chart">Pie Chart</button>
+
+        <!-- Results -->
+        <div id="result"></div>
+        <div id="votes">
+            <h2>Voted List:</h2>
+            <ul id="votesList"></ul>
+        </div>
+
+        <!-- Chart -->
+        <div class="chart-container">
+            <canvas id="pieChart"></canvas>
+        </div>
+    </div>
+
+</body>
+
+</html>

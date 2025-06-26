@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoteSphere</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">VoteSphere</div>
+            <ul class="menu">
+                <li><a href="/home" class="btn">Home</a></li>
+                <li><a href="/about" class="btn">About</a></li>
+                <li><a href="#">Score</a></li>
+               <!-- <button onclick="location.href='/option'" class="btn">Login</button>-->
+                <li><a href="/options" class="btn">login</a></li>
+                <li><a href="/contact" class="btn">Contact</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" placeholder="">
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>A Great Place for Voting</h1>
+            <p>"Empower your voice with SmartVote, explore top candidates, get tailored recommendations, and make informed decisions for a better future!"</p>
+            <div class="buttons">
+                <button class="btn let-votes" onclick="window.location.href='lets-vote.html';">Let Votes</button>
+               
+                <button class="btn vote-count" onclick="window.location.href='/register-options';">Create an Account</button>
+
+               <!-- <button class="btn vote-count">Create an account</button>-->
+            </div>
+        </div>
+    </header>
+
+    <section class="info-section">
+        <div class="info-card">
+            <h3>2000+ Voters</h3>
+            <p>Focus is having the unwavering attention.</p>
+        </div>
+        <div class="info-card">
+            <h3>To Improve Next Five Year</h3>
+            <p>New skills online, the best way to develop and follow.</p>
+        </div>
+        <div class="info-card">
+            <h3>Live Voting</h3>
+            <p>Your Vote is Your Voice.</p>
+       <!-- </div> <a href="/register/voter" class="btn">create an Account</a> -->
+    </section>
+
+    <section class="footer">
+        <p>Vote at Your Own Place</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

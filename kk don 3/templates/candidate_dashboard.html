@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='candidate_dashboard.css') }}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Welcome to the Candidate Dashboard!</h1>
+        <p>Here, you can manage your campaign and view election statistics.</p>
+
+        <div class="dashboard-content">
+            <section class="campaign-management">
+                <h2>Campaign Management</h2>
+                <ul>
+                    <li><a href="#">Update Campaign Slogan</a></li>
+                    <li><a href="#">Upload Campaign Image</a></li>
+                    <li><a href="#">View Campaign Analytics</a></li>
+                </ul>
+            </section>
+
+            <section class="election-statistics">
+                <h2>Election Statistics</h2>
+                <p>Current Vote Count: [Display Vote Count Here]</p>
+                <p>Projected Winning Chance: [Display Winning Chance Here]</p>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Voting System</p>
+        </footer>
+    </div>
+</body>
+</html>

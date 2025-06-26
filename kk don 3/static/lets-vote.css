@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+ background: linear-gradient(to right, #72cdf4,  #fc7c7c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Voting Card */
+.card {
+    background-color:rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    width: 90%;
+  width: 400px;
+    text-align: center;
+}
+
+/* Heading */
+.card h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Dropdown */
+.dropdown-container {
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.dropdown-container label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.dropdown-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+.button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button.vote {
+    background: linear-gradient(to right, #72cdf4,  #fc7c7c);
+}
+
+.button.clear {
+    background: linear-gradient(to right, #72cdf4,  #fc7c7c);
+}
+
+.button.chart {
+    background: linear-gradient(to right, #72cdf4,  #fc7c7c);
+}
+
+/* Results Section */
+#result {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+#votes {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#votes h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#votes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#votes ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Pie Chart */
+.chart-container {
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    margin: 20px auto 0;
+}

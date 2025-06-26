@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    background: linear-gradient(90deg, #72cdf4, #fc7c7c);
+    width: 100%;
+    max-width: 1300px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+.navbar .nav-links li a.active, 
+.navbar .nav-links li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* About Section Styles */
+.about-section {
+    padding: 2rem 0;
+    background: #f9f9f9;
+}
+
+.about-section h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.about-section ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.about-section ul li {
+    margin: 0.5rem 0;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}

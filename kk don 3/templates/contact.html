@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='contect.css') }}">
+	<title>Contact Us</title>
+</head>
+<body>
+	<header>
+		<h1>Contact Us</h1>
+	</header>
+	
+	<div class="content">
+		<p>Get in touch with us!</p>
+		
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" placeholder="Enter  your name"><br><br>
+			
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+			
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" placeholder="Enter your message"></textarea><br><br>
+			
+			<input type="submit" value="Send">
+		</form>
+	</div>
+	
+	<footer>
+		<p>&copy; 2024 Smart Voting System</p>
+	</footer>
+</body>
+</html>

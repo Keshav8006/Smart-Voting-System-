@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='option.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Smart Voting System</h1>
+        <div class="buttons">
+            <!--<button onclick="window.location.href='/voter_login'">Voter Login</button>
+            <button onclick="window.location.href='/candidate_login'">Candidate Login</button>-->
+            <a href="/candidate_login" class="btn">Candidate Login</a>
+            <a href="/voter_login" class="btn">Voter Login</a>
+        </div>
+    </div>
+</body>
+</html>

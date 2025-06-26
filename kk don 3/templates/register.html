@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register as {{ role }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}">
+</head>
+<body>
+    <h1>Register as {{ role }}</h1>
+    <form action="/submit/{{ role }}" method="POST">
+        <label for="person_id">ID:</label><br>
+        <input type="text" id="person_id" name="person_id"><br><br>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>Role being passed to form action: {{ role }}</p>  <!-- Debugging Line -->
+</body>
+</html>
